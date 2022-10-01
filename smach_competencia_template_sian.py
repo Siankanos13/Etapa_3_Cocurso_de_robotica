@@ -9,7 +9,15 @@ import smach
 import ros_numpy
 from utils_evasion import *
 import tf2_ros
-
+import matplotlib.pyplot as plt
+import tf
+import cv2
+import os
+from gazebo_ros import gazebo_interface
+from sensor_msgs.msg import LaserScan, PointCloud2, Image
+from geometry_msgs.msg import Pose, Quaternion ,TransformStamped
+import tf2_ros
+import sys
 ########## Functions for takeshi states ##########
 
 def get_coords ():
